@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  padding: 5px 20px 0px 20px;
+  background: black;
+  color: white;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  margin: 10px;
+}
+
+.food-post {
+  width: 30%;
+  height: 200px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+  margin: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.food-title {
+  text-align: center;
+  background: black;
+}
+
+.food-post > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}

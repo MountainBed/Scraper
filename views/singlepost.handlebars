@@ -1,0 +1,12 @@
+<div class="main-post-area">
+  <p>{{title}}</p>
+  <p>Comments</p>
+  {{#each comments}}
+  <div>{{this}}</div>
+  {{/each}}
+  <form action="/post/{{_id}}" method="post">
+    <p>Comment:</p>
+    <input type="text" name="newcomment">
+    <input type="submit" value="Save">
+  </form>
+</div>

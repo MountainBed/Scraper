@@ -1,0 +1,8 @@
+<div class="main-post-area">
+  {{#each postList}}
+  <div class="food-post">
+    <a href="post/{{this._id}}" target="_self"><p class="food-title">{{this.title}}</p></a>
+    <img src="{{this.imgSource}}">
+  </div>
+  {{/each}}
+</div>
