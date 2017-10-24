@@ -8,7 +8,7 @@ mongoose.Promise = Promise;
 
 var app = express();
 
-mongoose.connect("mongodb://localhost/scraperdb");
+mongoose.connect("mongodb://heroku_g790xb9z:kn9lfcfrkd7chojghl05v5fd5@ds227565.mlab.com:27565/heroku_g790xb9z");
 var db = mongoose.connection;
 
 app.use(express.static("public"));
