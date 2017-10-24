@@ -28,7 +28,8 @@ db.once("open", function () {
   console.log("Mongoose connection successful.");
 });
 
-require("./routes/html-routes.js")(app, db, __dirname);
+require("./routes/html-routes.js")(app, db);
+require("./routes/api-routes.js")(app, db);
 
 app.listen(PORT, function () {
   console.log("Listening on: " + PORT);

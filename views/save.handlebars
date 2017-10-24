@@ -1,0 +1,12 @@
+<div class="main-post-area">
+  {{#each postList}}
+  <div class="food-post">
+    <a href="post/{{this._id}}" target="_self"><p class="food-title">{{this.title}}</p></a>
+    <img src="{{this.imgSource}}">
+  </div>
+  <p>Link to recipe: <a href="{{this.link}}">{{this.title}}</a></p>
+  {{#each comments}}
+  <p>{{this.text}} <button class="delete-comment" data-value="{{this._id}}">Delete comment</button><p>
+    {{/each}}
+    {{/each}}
+</div>

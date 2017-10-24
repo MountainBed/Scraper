@@ -1,11 +1,14 @@
 <div class="main-post-area">
-  <p>{{title}}</p>
+  <div class="food-post">
+    <a href="{{this.link}}" target="_blank"><p class="food-title">{{this.title}}</p></a>
+    <img src="{{this.imgSource}}">
+  </div>
   <p>Comments</p>
   {{#each comments}}
-  <div>{{this}}</div>
+  <div>{{this.text}}</div>
   {{/each}}
   <form action="/post/{{_id}}" method="post">
-    <p>Comment:</p>
+    <p>Write your own comment below</p>
     <input type="text" name="newcomment">
     <input type="submit" value="Save">
   </form>

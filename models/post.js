@@ -19,7 +19,10 @@ var PostSchema = new Schema({
     type: Boolean,
     default: false
   },
-  comments: [String]
+  comments: [{
+    type: Schema.Types.ObjectId,
+    ref: "Comment"
+  }]
 });
 
 var Post = mongoose.model("Post", PostSchema);
